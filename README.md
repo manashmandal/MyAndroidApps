@@ -8,12 +8,16 @@ A Simple Android App
 
 # Message Activity
 
+A demo app for learning Intent
+
 ## Screenshot
 
 ![scr](message.png)
 
 
 # Stopwatch
+
+A demo stopwatch app using timedelay
 
 ## Screenshot
 
