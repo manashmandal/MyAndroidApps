@@ -70,9 +70,7 @@ public class StopWatchActivity extends Activity {
                 int secs = seconds % 60;
                 String time = String.format("%d:%02d:%02d", hours, minutes, secs);
                 timeView.setText(time);
-                if (running){
-                    seconds++;
-                }
+                if (running){ seconds++; }
                 handler.postDelayed(this, 1000);
             }
         });
