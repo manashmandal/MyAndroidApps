@@ -109,4 +109,11 @@ public class StopWatchActivity extends Activity {
             running = true;
         }
     }
+
+    @Override
+    protected void onPause(){
+        super.onPause();
+        wasRunning = running;
+        running = false;
+    }
 }
