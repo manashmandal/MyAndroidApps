@@ -116,4 +116,12 @@ public class StopWatchActivity extends Activity {
         wasRunning = running;
         running = false;
     }
+
+    @Override
+    protected void onResume(){
+        super.onResume();
+        if (wasRunning){
+            running = true;
+        }
+    }
 }
