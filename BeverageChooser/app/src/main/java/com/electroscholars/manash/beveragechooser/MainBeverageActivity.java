@@ -4,6 +4,10 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.CheckBox;
+import android.widget.Toast;
+import android.widget.ToggleButton;
 
 
 public class MainBeverageActivity extends ActionBarActivity {
@@ -35,5 +39,30 @@ public class MainBeverageActivity extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+
+    public void toasterOn(View view){
+        boolean on = ((ToggleButton) view).isChecked();
+
+        if (on){
+            int duration = Toast.LENGTH_SHORT;
+            CharSequence text = (CharSequence) ((ToggleButton) view).getTextOn();
+            Toast toast = Toast.makeText(this, text, duration);
+            toast.show();
+        } else {
+            int duration = Toast.LENGTH_SHORT;
+            CharSequence text = (CharSequence) ((ToggleButton) view).getTextOff();
+            Toast toast = Toast.makeText(this, text, duration);
+            toast.show();
+        }
+
+    }
+
+    public void onCheckBoxClick(View view){
+        int duration = Toast.LENGTH_SHORT;
+        CharSequence toastText = (CharSequence) ((CheckBox) view).getText();
+        Toast toast = Toast.makeText(this, toastText, duration);
+        toast.show();
     }
 }

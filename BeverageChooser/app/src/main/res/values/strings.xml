@@ -4,5 +4,17 @@
     <string name="app_name">Beverage Chooser</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="ques">Thanks for choosing our awesome blend tea. How do you want it serving?</string>
+    <string name="temperature">Temperature: </string>
+    <array name="temperatureArray">
+        <item>Hot</item>
+        <item>Cold</item>
+        <item>Normal</item>
+    </array>
 
+    <string name="lemon">Lemon</string>
+    <string name="sugar">Sugar</string>
+    <string name="milk">Milk</string>
+    <string name="hot">Hot</string>
+    <string name="cold">Cold</string>
 </resources>
